@@ -29,88 +29,91 @@ enum Page {
 
 const HomeBackground: React.FC = () => (
   <div className="z-[-1] top-0 left-0 w-[100vw] h-[100vh] absolute overflow-hidden">
-    <div className="relative w-full h-full">
-      <Chocolate className="w-24 absolute top-1/2 left-1/2 transform translate-x-[46px] -translate-y-[307px]" />
-      <Chocolate className="w-14 absolute top-1/2 left-1/2 transform translate-x-[210px] -translate-y-[180px]" />
-      <Chocolate className="w-9 absolute top-1/2 left-1/2 transform translate-x-[190px] -translate-y-[140px]" />
-
-      <Image
-        height={240}
-        width={240}
-        src={RainbowImage.src}
-        alt="rainbow picture"
-        className="absolute top-1/2 left-1/2 transform -translate-x-[170px] -translate-y-[440px] rotate-[-16deg]"
-      />
-
-      <Image
-        height={140}
-        width={140}
-        src={RainbowImage.src}
-        alt="rainbow picture"
-        className="absolute top-1/2 left-1/2 transform translate-x-[90px] -translate-y-[220px] rotate-[170deg]"
-      />
-
-      <Image
-        height={BtcImage.height * 0.8}
-        width={BtcImage.width * 0.8}
-        src={BtcImage.src}
-        alt="btc picture"
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[60%]"
-      />
-      <RgbBadge className="w-20 absolute top-1/2 left-1/2 transform -translate-x-[175px] -translate-y-[256px] drop-shadow-[17px_19px_10px_#2A01014D]" />
-      <Shuriken className="w-40 text-[#FFEEDD] absolute top-1/2 left-1/2 transform -translate-x-[280px] -translate-y-60" />
-      <Shuriken className="w-8 text-[#FFEEDD] absolute top-1/2 left-1/2 transform -translate-x-44 translate-y-[120px]" />
-      <Shuriken className="w-16 text-[#FFEEDD] absolute top-1/2 left-1/2 transform -translate-x-[160px] translate-y-[132px]" />
-
-      <Image
-        height={88}
-        width={200}
-        src={RgbppBadge.src}
-        alt="rgb++ picture"
-        className="absolute top-1/2 left-1/2 transform translate-x-[60px] -translate-y-[236px]"
-      />
-
-      <Image
-        height={180}
-        width={150}
-        src={GreenGuy.src}
-        alt="green guy picture"
-        className="absolute top-1/2 left-1/2 transform translate-x-14 translate-y-1"
-      />
-
-      <Image
-        height={77}
-        width={55}
-        src={PhoneImage.src}
-        alt="mobile phone picture"
-        className="absolute top-1/2 left-1/2 transform -translate-x-[156px] translate-y-[20px]"
-      />
-
-      <Image
-        height={77}
-        width={55}
-        src={PhoneImage.src}
-        alt="mobile phone picture"
-        className="absolute top-1/2 left-1/2 transform -translate-x-[202px] translate-y-[69px]"
-      />
-
-      <Image
-        height={150}
-        width={107}
-        src={PhoneImage.src}
-        alt="mobile phone picture"
-        className="absolute top-1/2 left-1/2 transform -translate-x-[240px]"
-      />
-    </div>
     <div className="z-[-1] absolute top-0 bottom-0 left-0 w-[50vw] bg-primary" />
     <div className="z-[-1] absolute top-0 bottom-0 right-0 w-[50vw] bg-secondary" />
+    <div className="top-0 left-0 w-[100vw] h-[100vh] absolute">
+      <div className="relative w-full h-full">
+        <Chocolate className="w-24 absolute top-1/2 left-1/2 transform translate-x-[46px] -translate-y-[307px]" />
+        <Chocolate className="w-14 absolute top-1/2 left-1/2 transform translate-x-[210px] -translate-y-[180px]" />
+        <Chocolate className="w-9 absolute top-1/2 left-1/2 transform translate-x-[190px] -translate-y-[140px]" />
+
+        <Image
+          height={240}
+          width={240}
+          src={RainbowImage.src}
+          alt="rainbow picture"
+          className="absolute top-1/2 left-1/2 transform -translate-x-[170px] -translate-y-[440px] rotate-[-16deg]"
+        />
+
+        <Image
+          height={140}
+          width={140}
+          src={RainbowImage.src}
+          alt="rainbow picture"
+          className="absolute top-1/2 left-1/2 transform translate-x-[90px] -translate-y-[220px] rotate-[170deg]"
+        />
+
+        <Image
+          height={550}
+          width={448}
+          src={BtcImage.src}
+          alt="btc picture"
+          className="absolute h-[550px] w-[448px] object-cover top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[60%]"
+        />
+        <RgbBadge className="w-20 absolute top-1/2 left-1/2 transform -translate-x-[175px] -translate-y-[256px] drop-shadow-[17px_19px_10px_#2A01014D]" />
+        <Shuriken className="w-40 text-[#FFEEDD] absolute top-1/2 left-1/2 transform -translate-x-[280px] -translate-y-60" />
+        <Shuriken className="w-8 text-[#FFEEDD] absolute top-1/2 left-1/2 transform -translate-x-44 translate-y-[120px]" />
+        <Shuriken className="w-16 text-[#FFEEDD] absolute top-1/2 left-1/2 transform -translate-x-[160px] translate-y-[132px]" />
+
+        <Image
+          height={88}
+          width={200}
+          src={RgbppBadge.src}
+          alt="rgb++ picture"
+          className="absolute top-1/2 left-1/2 transform translate-x-[60px] -translate-y-[236px]"
+        />
+
+        <Image
+          height={180}
+          width={150}
+          src={GreenGuy.src}
+          alt="green guy picture"
+          className="absolute top-1/2 left-1/2 transform translate-x-14 translate-y-1"
+        />
+
+        <Image
+          height={77}
+          width={55}
+          src={PhoneImage.src}
+          alt="mobile phone picture"
+          className="absolute top-1/2 left-1/2 transform -translate-x-[156px] translate-y-[20px]"
+        />
+
+        <Image
+          height={77}
+          width={55}
+          src={PhoneImage.src}
+          alt="mobile phone picture"
+          className="absolute top-1/2 left-1/2 transform -translate-x-[202px] translate-y-[69px]"
+        />
+
+        <Image
+          height={150}
+          width={107}
+          src={PhoneImage.src}
+          alt="mobile phone picture"
+          className="absolute top-1/2 left-1/2 transform -translate-x-[240px]"
+        />
+      </div>
+    </div>
+
     <>
       <Image
         height={350}
         width={300}
         src={BlueGuy.src}
         alt="blue guy"
-        className="absolute bottom-0 left-1/2 transform -translate-x-[300px]"
+        className="absolute h-[24vh] w-[32vh] bottom-0 left-1/2 transform -translate-x-[100%]"
       />
 
       <Image
@@ -118,7 +121,7 @@ const HomeBackground: React.FC = () => (
         width={300}
         src={RedGuy.src}
         alt="red guy"
-        className="absolute bottom-0 left-1/2"
+        className="absolute h-[24vh] w-[32vh] bottom-0 left-1/2"
       />
 
       <Image
@@ -126,37 +129,39 @@ const HomeBackground: React.FC = () => (
         width={300}
         src={DancingCyanGuy.src}
         alt="dancing cyan guy.gif"
-        className="absolute bottom-[-90px] left-1/2 transform -translate-x-1/2"
+        className="absolute h-[40vh] w-[30vh] -bottom-[8vh] left-1/2 transform -translate-x-1/2"
       />
     </>
   </div>
 );
 
-const HomePage: React.FC<{ onPageChange: Function }> = ({ onPageChange }) => (
+const HomePage: React.FC = () => (
   <div className="h-screen w-screen relative">
     <HomeBackground />
     <div className="h-full w-full container mx-auto">
-      <div className="text-center px-10 w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[100%]">
-        <span className="text-center font-deltarune text-9xl text-branding text-stroke drop-shadow-[6px_25px_12px_rgba(0,0,0,0.25)]">
+      <div className="px-2 sm:px-4 lg:px-10 text-center w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[100%]">
+        <span className="text-center font-deltarune text-7xl sm:text-8xl lg:text-9xl text-branding text-stroke drop-shadow-[6px_25px_12px_rgba(0,0,0,0.25)]">
           Friends of Bitcoin
         </span>
       </div>
-      <div className="px-10 w-full flex absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-4">
-        <button
+      <div className="px-2 sm:px-4 lg:px-10 w-full flex absolute bottom-[30vh] left-1/2 transform -translate-x-1/2">
+        <a
           className="btn-pixel bg-[#A3FFCD] text-[#FF00A8]"
-          onClick={() => onPageChange(Page.Nashville)}
+          href="https://lu.ma/0bwudqyt"
+          target="_blank"
         >
-          <PixelArrow className="w-8 mr-2" />
+          <PixelArrow className="w-6 lg:w-8 mr-2" />
           Nashville
-        </button>
+        </a>
 
-        <button
+        <a
           className="btn-pixel bg-[#FF00E5] text-[#00FFD1] ml-auto"
-          onClick={() => onPageChange(Page.Brussels)}
+          href="https://lu.ma/yb8kvcbx"
+          target="_blank"
         >
           Brussels
-          <PixelArrow className="rotate-180 w-8 ml-2" />
-        </button>
+          <PixelArrow className="rotate-180 w-6 lg:w-8 ml-2" />
+        </a>
       </div>
     </div>
   </div>
@@ -278,8 +283,7 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
       <City className="w-96 absolute bottom-0 left-1/2 transform -translate-x-full" />
       <City className="w-96 absolute bottom-0 left-1/2 transform translate-x-[5%] scale-x-[-1]" />
 
-      <Chocolate className="w-24 rotate-[32deg] absolute top-16 left-[16vw]"/>
-
+      <Chocolate className="w-24 rotate-[32deg] absolute top-16 left-[16vw]" />
 
       <Image
         height={500}
@@ -297,7 +301,6 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
       />
     </>
     <div className="relative ml-[30vw] pt-10">
-
       <Image
         height={180}
         width={180}
@@ -305,7 +308,7 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
         alt="rainbow picture"
         className="absolute top-[-100px] left-[648px]"
       />
-      <Chocolate className="w-32 absolute top-4 left-[630px]"/>
+      <Chocolate className="w-32 absolute top-4 left-[630px]" />
       <div className="flex flex-col items-start mb-10">
         <span className="font-deltarune text-branding text-stroke text-3xl mb-[-40px] ml-[340px]">
           Friends of Bitcoin
@@ -321,10 +324,12 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
             Overview
           </div>
           <div className="font-arbutus">Half day event with a party 💫</div>
-          <Chocolate className="w-20 rotate-[135deg] absolute top-[-10px] right-[-100px]"/>
+          <Chocolate className="w-20 rotate-[135deg] absolute top-[-10px] right-[-100px]" />
         </div>
         <div className="relative z-10 px-7 py-4 bg-black rounded-[44px] text-white">
-          <div className="font-deltarune text-secondary text-lg mb-1">About</div>
+          <div className="font-deltarune text-secondary text-lg mb-1">
+            About
+          </div>
           <div className="font-arbutus">
             <p className="mb-3">
               Friends of Bitcoin is inspired by building on{" "}
@@ -344,7 +349,7 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
             <p className="text-xs text-[#4CDFFF]">Agenda coming soon.</p>
           </div>
 
-          <Chocolate className="w-20 rotate-[-124deg] absolute top-[20px] right-[-44px]"/>
+          <Chocolate className="w-20 rotate-[-124deg] absolute top-[20px] right-[-44px]" />
         </div>
         <div className="flex items-start gap-4">
           <div className="z-10 px-7 py-4 bg-black rounded-[44px] text-white">
@@ -387,39 +392,5 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
 );
 
 export default function Landing() {
-  const [page, setPage] = useState<Page>(Page.Home);
-
-  return (
-    <div className="overflow-hidden overflow-x-hidden w-screen h-screen">
-      <div
-        className={clsx("absolute transition-all", {
-          ["left-0"]: page === Page.Nashville,
-          ["left-[-100%]"]: page === Page.Home,
-          ["left-[-200%]"]: page === Page.Brussels,
-        })}
-      >
-        <NashvillePage onPageChange={setPage} />
-      </div>
-
-      <div
-        className={clsx("absolute transition-all", {
-          ["left-[100%]"]: page === Page.Nashville,
-          ["left-0"]: page === Page.Home,
-          ["left-[-100%]"]: page === Page.Brussels,
-        })}
-      >
-        <HomePage onPageChange={setPage} />
-      </div>
-
-      <div
-        className={clsx("absolute transition-all", {
-          ["left-[200%]"]: page === Page.Nashville,
-          ["left-[100%]"]: page === Page.Home,
-          ["left-0"]: page === Page.Brussels,
-        })}
-      >
-        <BrusselsPage onPageChange={setPage} />
-      </div>
-    </div>
-  );
+  return <HomePage />;
 }
