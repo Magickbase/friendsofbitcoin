@@ -20,6 +20,7 @@ import NashvilleBtcImage from "./nashville_btc.png";
 import BrusselsBtcImage from "./brussels_btc.png";
 import RainbowImage from "./rainbow.png";
 import PhoneImage from "./phone.png";
+import Head from "next/head";
 
 enum Page {
   Home,
@@ -392,5 +393,12 @@ const BrusselsPage: React.FC<{ onPageChange: Function }> = ({
 );
 
 export default function Landing() {
-  return <HomePage />;
+  return (
+    <>
+      <Head>
+        <title>Friends of Bitcoin</title>
+      </Head>
+      <HomePage />
+    </>
+  );
 }
